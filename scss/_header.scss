@@ -1,0 +1,16 @@
+header{
+    margin-top: 50px;
+    h1{
+        color:$color-azul3;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 60px;
+        letter-spacing: 30px;
+        -webkit-text-stroke: 2px $color-azul1;
+    }
+    p{
+        color:$color-azul1;
+        -webkit-text-stroke: 2px $color-azul2;
+        font-size: 43px;
+        letter-spacing: 10px;
+    }
+}

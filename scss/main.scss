@@ -1,0 +1,95 @@
+main{
+    text-align: center;
+    .subtitulo{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        color: $color-azul3;
+        border: $color-dark 2px;
+    }
+    span{
+        letter-spacing: 10px;
+        background-color: $color-azul2;
+    }
+    
+    hr{
+        border-top: black 2px dashed;
+    }
+}
+section{
+    div{
+        p{
+            color: $color-rojo;
+            -webkit-text-stroke: 2px $color-dark;
+        }
+            
+        }
+    }
+
+
+            /*EXTEND*/
+    
+    section{
+        .imagen-1{
+            padding-top: 10px;
+            color: $color-azul3;
+            border: $color-dark 2px;
+            span{
+            padding-left: 0.5em;
+            }
+            p{
+                margin-top: 10px;
+            }
+            img{
+                transform: scale(2s);
+                transition: transform 0.5s;
+            }
+            img:hover{
+                transform: scale(1.2);
+            }
+        }   
+    }
+
+    .imagen-2{ 
+            @extend .imagen-1;
+        }
+
+        .imagen-3{ 
+            @extend .imagen-1;
+        }
+
+        article{
+            background-image:url(/images/fondoiframe.jpg);
+            background-repeat: no-repeat ;
+            background-attachment: fixed;
+            h4{
+                margin-top: $mtop25;
+                margin-bottom: $mtop25;
+                letter-spacing: $ls05/2;
+            }
+            h3{
+                margin-top: $mtop25*2;
+                letter-spacing: $ls05/2;
+            }
+        }
+        
+        .articulo_articulo_2{
+            margin-top: $mtop25*2;
+            padding-bottom: 100px;
+        }
+
+        .card-img{
+            height: $height286;
+            border: 4px black solid;
+        }
+
+      // Each
+$lista-colores: 1#413F42, 2#73777B, 3#7F8487,;
+
+@each $bg-color in $lista-colores {
+    .card-body_#{$bg-color} {
+        background-color: $bg-color;
+    }
+    
+}

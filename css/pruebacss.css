@@ -1,0 +1,90 @@
+header {
+  margin-top: 50px; }
+  header h1 {
+    color: #0AA1DD;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 60px;
+    letter-spacing: 30px;
+    -webkit-text-stroke: 2px #2A2550; }
+  header p {
+    color: #2A2550;
+    -webkit-text-stroke: 2px #001D6E;
+    font-size: 43px;
+    letter-spacing: 10px; }
+
+main {
+  text-align: center; }
+  main .subtitulo {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #0AA1DD;
+    border: #180A0A 2px; }
+  main span {
+    letter-spacing: 10px;
+    background-color: #001D6E; }
+  main hr {
+    border-top: black 2px dashed; }
+
+section div p {
+  color: #F32424;
+  -webkit-text-stroke: 2px #180A0A; }
+
+/*EXTEND*/
+section .imagen-1, section .imagen-2, section .imagen-3 {
+  padding-top: 10px;
+  color: #0AA1DD;
+  border: #180A0A 2px; }
+  section .imagen-1 span, section .imagen-2 span, section .imagen-3 span {
+    padding-left: 0.5em; }
+  section .imagen-1 p, section .imagen-2 p, section .imagen-3 p {
+    margin-top: 10px; }
+  section .imagen-1 img, section .imagen-2 img, section .imagen-3 img {
+    transform: scale(2s);
+    transition: transform 0.5s; }
+  section .imagen-1 img:hover, section .imagen-2 img:hover, section .imagen-3 img:hover {
+    transform: scale(1.2); }
+
+article {
+  background-image: url(/images/fondoiframe.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  article h4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 0.25em; }
+  article h3 {
+    margin-top: 50px;
+    letter-spacing: 0.25em; }
+
+.articulo_articulo_2 {
+  margin-top: 50px;
+  padding-bottom: 100px; }
+
+.card-img {
+  height: 286px;
+  border: 4px black solid; }
+
+.card-body_1 #413F42 {
+  background-color: 1 #413F42; }
+
+.card-body_2 #73777B {
+  background-color: 2 #73777B; }
+
+.card-body_3 #7F8487 {
+  background-color: 3 #7F8487; }
+
+body {
+  background-image: url(/images/fondoweb.jpg);
+  background-size: cover;
+  background-attachment: scroll; }
+
+.grid-index {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em; }
+  @media screen and (min-widht: 320px) {
+    .grid-index {
+      grid-template-columns: 1fr;
+      gap: 0em; } }
