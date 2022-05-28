@@ -1,3 +1,6 @@
+/*------MIXIN PARA FLEX------*/
+/*-----MIXIN PARA FLEX-----*/
+/*-----MIXIN PARA RESPONSIVE DESIGN-----*/
 header {
   margin-top: 50px; }
   header h1 {
@@ -75,16 +78,15 @@ article {
 .card-body_3 #7F8487 {
   background-color: 3 #7F8487; }
 
+.main-seccion2 {
+  display: repeat(4, 1fr);
+  gap: 2em; }
+  @media screen and (min-width: 320px) {
+    .main-seccion2 {
+      grid-template-columns: 1fr;
+      gap: 0em; } }
+
 body {
   background-image: url(/images/fondoweb.jpg);
   background-size: cover;
   background-attachment: scroll; }
-
-.grid-index {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1em; }
-  @media screen and (min-widht: 320px) {
-    .grid-index {
-      grid-template-columns: 1fr;
-      gap: 0em; } }

@@ -6,3 +6,32 @@ $color-rojo: #F32424;
 $mtop25: 25px;
 $ls05: 0.5em;
 $height286:286px;
+
+
+/*------MIXIN PARA FLEX------*/
+@mixin flexible($dis , $direction , $corte , $just , $align) {
+    display: $dis;
+    flex-flow: $direction, $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+/*-----MIXIN PARA FLEX-----*/
+@mixin grid( $columnas , $espacio ){
+    display: repeat( $columnas, 1fr );
+    gap: $espacio;
+
+        @media screen and(min-width:320px) {
+        grid-template-columns: 1fr;
+        gap: 0em;
+    }
+}
+/*-----MIXIN PARA RESPONSIVE DESIGN-----*/ 
+
+@mixin mv( $medida : 320px) {
+    @media screen and(min-width:$medida) {
+        @content
+        
+    }
+}
+

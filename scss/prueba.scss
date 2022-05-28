@@ -2,25 +2,10 @@
 @import "nav";
 @import "header";
 @import "main";
+@import "main-2";
 
 body{
 background-image: url(/images/fondoweb.jpg);
 background-size: cover;
 background-attachment: scroll ;
-}
-
-@mixin grid( $columnas , $espacio ){
-    display: grid;
-    grid-template-columns: repeat( $columnas, 1fr );
-    gap: $espacio;
-    
-    @media screen and(min-widht:320px){
-        grid-template-columns: 1fr;
-        gap: 0em;
-    }
-    
-}
-
-.grid-index{
-    @include grid(1, 1em)
 }
