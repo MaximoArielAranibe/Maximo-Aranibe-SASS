@@ -24,13 +24,13 @@ main {
     margin-top: 50px;
     color: #0AA1DD;
     border: #180A0A 2px; }
-  main span {
+  main .index_main_span, main .index_section_span {
     letter-spacing: 10px;
     background-color: #001D6E; }
   main hr {
     border-top: black 2px dashed; }
 
-section div p {
+section div .index_section_p {
   color: #F32424;
   -webkit-text-stroke: 2px #180A0A; }
 
@@ -49,15 +49,15 @@ section .imagen-1, section .imagen-2, section .imagen-3 {
   section .imagen-1 img:hover, section .imagen-2 img:hover, section .imagen-3 img:hover {
     transform: scale(1.2); }
 
-article {
+.index_article_imgbg {
   background-image: url(/images/fondoiframe.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed; }
-  article h4 {
+  .index_article_imgbg h4 {
     margin-top: 25px;
     margin-bottom: 25px;
     letter-spacing: 0.25em; }
-  article h3 {
+  .index_article_imgbg h3 {
     margin-top: 50px;
     letter-spacing: 0.25em; }
 
@@ -78,13 +78,80 @@ article {
 .card-body_3 #7F8487 {
   background-color: 3 #7F8487; }
 
-.main-seccion2 {
-  display: repeat(4, 1fr);
-  gap: 2em; }
-  @media screen and (min-width: 320px) {
-    .main-seccion2 {
-      grid-template-columns: 1fr;
-      gap: 0em; } }
+/*MAIN SECCION1*/
+.seccion1_main_row1, .seccion1_main_row2, .seccion1_main_row3, .seccion1_main_row4 {
+  letter-spacing: 5px;
+  font-weight: bold; }
+
+.seccion1_main_div_h3 {
+  padding: 10px 0px; }
+
+.seccion1_main_row1 {
+  background-color: #242F9B; }
+
+.seccion1_main_row2 {
+  background-color: #646FD4; }
+
+.seccion1_main_row3 {
+  background-color: #9BA3EB; }
+
+.seccion1_main_row4 {
+  background-color: #0AA1DD; }
+
+.index_article_h3, .index_article_h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; }
+
+/*SECCION 2*/
+.secciones_div_img {
+  width: 250px;
+  height: 250px; }
+
+/*SECCION 3*/
+.seccion3_main_h1 {
+  padding-top: 2em; }
+
+.seccion1_footer_h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500; }
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 60px; }
+  .seccion1_main .seccion1_main_div_h3 {
+    font-size: 36px; } }
+
+@media screen and (max-width: 480px) {
+  header {
+    margin-top: 30px; }
+    header h1 {
+      color: #0AA1DD;
+      font-family: 'Black Han Sans', sans-serif;
+      font-size: 20px;
+      letter-spacing: 5px;
+      -webkit-text-stroke: 2px #2A2550;
+      padding-left: 0px;
+      white-space: nowrap;
+      padding-bottom: 10px; }
+    header p {
+      color: #0AA1DD;
+      -webkit-text-stroke: 2px #2A2550;
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding-left: 0px;
+      white-space: nowrap;
+      padding-top: 10px; }
+  .index_section_img {
+    width: 250px;
+    height: 250px; }
+  iframe {
+    width: 250px;
+    height: 250px; }
+  .seccion1_main_row1, .seccion1_main_row2, .seccion1_main_row3, .seccion1_main_row4 {
+    letter-spacing: 0px;
+    font-weight: bold; }
+    .seccion1_main_row1 .seccion1_main_div_h3, .seccion1_main_row2 .seccion1_main_div_h3, .seccion1_main_row3 .seccion1_main_div_h3, .seccion1_main_row4 .seccion1_main_div_h3 {
+      font-size: 16px; } }
 
 body {
   background-image: url(/images/fondoweb.jpg);

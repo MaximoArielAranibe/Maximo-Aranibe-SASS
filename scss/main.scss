@@ -8,7 +8,7 @@ main{
         color: $color-azul3;
         border: $color-dark 2px;
     }
-    span{
+    .index_main_span,.index_section_span{
         letter-spacing: 10px;
         background-color: $color-azul2;
     }
@@ -19,7 +19,7 @@ main{
 }
 section{
     div{
-        p{
+        .index_section_p{
             color: $color-rojo;
             -webkit-text-stroke: 2px $color-dark;
         }
@@ -59,7 +59,7 @@ section{
             @extend .imagen-1;
         }
 
-        article{
+        .index_article_imgbg{
             background-image:url(/images/fondoiframe.jpg);
             background-repeat: no-repeat ;
             background-attachment: fixed;
@@ -93,3 +93,46 @@ $lista-colores: 1#413F42, 2#73777B, 3#7F8487,;
     }
     
 }
+
+                        /*MAIN SECCION1*/
+    .seccion1_main_row1,.seccion1_main_row2,.seccion1_main_row3,.seccion1_main_row4{
+        letter-spacing: 5px;
+        font-weight: bold;
+    }
+        .seccion1_main_div_h3{
+            padding: 10px 0px;
+        }
+    
+        .seccion1_main_row1{
+            background-color: $azul1;
+        }
+
+        .seccion1_main_row2{
+            background-color: $azul2;
+        }
+
+        .seccion1_main_row3{
+            background-color: $azul3;
+        }
+
+        .seccion1_main_row4{
+            background-color: $color-azul3;
+        }
+
+        .index_article_h3,.index_article_h4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+        }
+
+
+        /*SECCION 2*/
+        .secciones_div_img{
+            width: 250px;
+            height: 250px;
+        }
+
+        /*SECCION 3*/
+        
+        .seccion3_main_h1{
+            padding-top: 2em;
+        }
